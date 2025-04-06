@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Result } from '../Result';
 export const Quiz = ({sports, sportHeader, src, alt, path, pathAlt}) => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [result, setResult] = useState(true);
+    const [result, setResult] = useState(false);
     const [score, setScore] = useState(0);
     const [start, setStart] = useState(false)
     const handleAnswerClick = (answerOption) => {
