@@ -7,9 +7,9 @@ export const BoxingQuiz = () => {
       <Quiz 
         sports={boxingQuestions}
         sportHeader={'BOXING'}
-        src={'src/assets/boxing.webp'}
+        src={'https://www.spectator.co.uk/wp-content/uploads/2024/09/Toby-Getty_51b070.jpg'}
         alt={'boxers image'}
-        path='src/assets/boxing-4.avif'
+        path='https://mir-s3-cdn-cf.behance.net/project_modules/1400/179b3f157131633.637396fce47d4.png'
         pathAlt={'boxers image'}
       />
     </>

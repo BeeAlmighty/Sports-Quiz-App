@@ -7,9 +7,9 @@ export const MmaQuiz = () => {
       <Quiz 
         sports={mmaQuestions}
         sportHeader={'UFC'}
-        src={'src/assets/ufc2-art.jpeg'}
+        src={'https://i.pinimg.com/originals/43/b2/57/43b25707289ff4b11634598aa736ea6a.jpg'}
         alt={'fighters image'}
-        path='src/assets/ufc-4.jpg'
+        path='https://i.ytimg.com/vi/dPe1uFE47kI/maxresdefault.jpg'
         pathAlt={'fighters image'}
       />
     </>

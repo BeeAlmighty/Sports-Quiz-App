@@ -14,19 +14,19 @@ export const Home = () => {
         <div className='grid gap-[1rem] md:grid-cols-3 bg-[#FFF2DB] md:p-[4rem] p-[2rem]'>
           <Link to={'/boxing'}>
             <div className='flex flex-col gap-[0.5rem] bg-white p-[0.5rem] rounded-lg md:hover:translate-y-[-1rem] duration-500 ease-in'>
-              <img className='w-[10rem] h-[10rem] bg-cover bg-center cursor-pointer' src="src/assets/boxing-art.jpg" alt="boxing-art" />
+              <img className='w-[10rem] h-[10rem] bg-cover bg-center cursor-pointer' src="https://img.cdn-pictorem.com/uploads/collection/H/HF2KPM3FPR/900_Goldfishwallart_VINTAGE_MUHAMMAD_ALI_BOXING_CHAMPION_WALL_ART_Gol.jpg" />
               <p className='bg-fuchsia-500 text-center rounded-md' >boxing</p>
             </div>
           </Link>
           <Link to={'/football'}>
             <div className='flex flex-col gap-[0.5rem] bg-white p-[0.5rem] rounded-lg md:hover:translate-y-[-1rem] duration-500 ease-in'>
-              <img className='w-[10rem] h-[10rem] bg-cover bg-center cursor-pointer' src="src/assets/football-2-art.jpg" alt="football art" />
+              <img className='w-[10rem] h-[10rem] bg-cover bg-center cursor-pointer' src="https://storage.googleapis.com/pod_public/1300/159319.jpg" />
               <p className='bg-fuchsia-500 text-center rounded-md' >football</p>
             </div>
           </Link>
           <Link to={'mma'}>
             <div className='flex flex-col gap-[0.5rem] bg-white p-[0.5rem] rounded-lg md:hover:translate-y-[-1rem] duration-500 ease-in'>
-              <img className='w-[10rem] h-[10rem] bg-cover bg-center cursor-pointer' src="src/assets/ufc-art.jpg" alt="ufc-art" />
+              <img className='w-[10rem] h-[10rem] bg-cover bg-center cursor-pointer' src="https://i.pinimg.com/originals/d8/78/23/d87823ec1fbc5ad3ba26b01e696327d9.jpg" />
               <p className='bg-fuchsia-500 text-center rounded-md' >UFC</p>
             </div>
           </Link>

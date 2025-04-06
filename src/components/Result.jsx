@@ -9,7 +9,7 @@ export const Result = ({percent, path, pathAlt}) => {
   }, [])
   return (
     <div className='p-[2rem] bg-black my-[2rem] rounded-md flex flex-col gap-[2rem] text-white items-center'>
-      <img src={path} alt={pathAlt} />
+      <img src={path} alt={pathAlt} className='max-h-[20rem] max-w-[25rem]'/>
       {showLoader ? (
       <>
       <h2>Calculating Score...</h2>
