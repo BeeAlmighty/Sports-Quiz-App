@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IconBase } from 'react-icons';
 import { FaBrain } from "react-icons/fa";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineClose } from "react-icons/ai";
+
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleOpenNav = () => {
@@ -22,7 +25,10 @@ export const Navbar = () => {
         {/* <img src="src/assets/quiz_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.svg" alt="quiz logo" className='w-[2rem] cursor-pointer'/> */}
         <FaBrain style={{fontSize: '2rem', color: 'purple'}}/>
       </Link>
-      <img src="src/assets/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="hamburger-menu" className='w-[2rem] cursor-pointer md:hidden bg-fuchsia-400 rounded-md p-[0.15rem]' onClick={handleOpenNav}/>
+      <RxHamburgerMenu className='text-fuchsia-600 cursor-pointer md:hidden  rounded-md' 
+      style={{fontSize: '2rem'}}
+      onClick={handleOpenNav}/>
+      {/* <RxHamburgerMenu /> */}
       {/* Desktop Navigation */}
       <ul className='md:flex items-center gap-[1rem] hidden lg:gap-[3rem]'>
         <Link to={'/'}>
@@ -40,7 +46,7 @@ export const Navbar = () => {
       </ul>
       {/* Mobile Navigation */}
       <ul className={nav ? 'flex items-start flex-col fixed top-0 w-[90%] left-[0] h-full p-[4rem] gap-[1.5rem] backdrop-blur-md duration-500 ease-in-out' : 'flex items-start flex-col fixed top-0 left-[-100%] h-full p-[4rem] gap-[1.5rem] backdrop-blur-md duration-500 ease-in-out'}>
-        <img src="src/assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="close button" id='close-btn' onClick={handleCloseNav} className='cursor-pointer'/>
+        <AiOutlineClose onClick={handleCloseNav} className='cursor-pointer text-[2rem] text-fuchsia-600'/>
         {navItems.map(navItem => (
           <Link to={navItem.to} key={navItem.id} className='w-full text-fuchsia-300'>
             <li className='hover:bg-fuchsia-800 w-full p-[0.5rem] hover:rounded-md duration-500 border-b-1 hover:text-white active:bg-amber-700' onClick={handleCloseNav}>{navItem.name}</li>
