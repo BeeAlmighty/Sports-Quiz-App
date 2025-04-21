@@ -15,7 +15,7 @@
 }
 @layer component {
   .option-card {
-    @apply bg-fuchsia-500 px-[2rem] py-[0.5rem] rounded-md text-center cursor-pointer hover:bg-fuchsia-600 transition duration-150 ease-in text-white
+    @apply bg-black px-[2rem] py-[0.5rem] rounded-md text-center cursor-pointer transition duration-150 ease-in text-white
   }
   .card {
     @apply grid 
